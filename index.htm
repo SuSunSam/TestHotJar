@@ -3,6 +3,8 @@
 <html><head>
     <!-- Hotjar Tracking Code for https://susunsam.github.io/testhotjar/ -->
     <script>
+       
+
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:1878115,hjsv:6};
@@ -215,6 +217,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
         <span><a href="https://www.taobao.com/tbhome/page/about/home" rel="noopener noreferrer">关于淘宝</a></span><span><a href="https://www.taobao.com/tbhome/page/about/partner?spm=a21bo.9614792.102.5.ed410c5siU20Y" rel="noopener noreferrer">合作伙伴</a></span><span><a href="http://pro.taobao.com/" rel="noopener noreferrer">营销中心</a></span><span><a href="http://jubao.alibaba.com/internet/readme.htm?site=taobao" rel="noopener noreferrer">廉正举报</a></span><span><a href="https://consumerservice.taobao.com/" rel="noopener noreferrer">联系客服</a></span><span><a href="http://open.taobao.com/" rel="noopener noreferrer">开放平台</a></span><span><a href="http://www.taobao.com/about/join.php" rel="noopener noreferrer">诚征英才</a></span><span><a href="http://consumerservice.taobao.com/contact-us" rel="noopener noreferrer">联系我们</a></span><span><a href="https://www.taobao.com/tbhome/page/sitemap" rel="noopener noreferrer">网站地图</a></span><span><a href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html" rel="noopener noreferrer">隐私权政策</a></span><span><a href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201811121436_80276.html" rel="noopener noreferrer">法律声明</a></span><span><a href="http://ipp.alibabagroup.com/" rel="noopener noreferrer">知识产权</a></span>
         <b>|</b> <em>© 2003-现在 Taobao.com 版权所有</em>
     </p>
+
     <p><span><a href="http://www.beian.miit.gov.cn/" rel="noopener noreferrer">增值电信业务经营许可证：浙B2-20080224</a></span><b>|</b><span><a href="http://www.beian.miit.gov.cn/" rel="noopener noreferrer">增值电信业务经营许可证（跨地区）： B2-20150210</a></span><b>|</b><span><a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/2E7819FC84674D5980464916C24B7E3E" rel="noopener noreferrer">浙网文（2019）1033-086号</a></span><b>|</b><span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</span></p><p><span>互联网药品信息服务资格证书（浙）-经营性-2018-0010</span><b>|</b><span>短消息类服务接入代码使用证书：号【2016】00154-A01</span><b>|</b><span>信息网络传播视听许可证：1109364号</span><b>|</b><span>出版物网络交易平台服务经营备案号：新出发浙备字第002号</span></p><p><span>
             <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000078" rel="noopener noreferrer">
               <span class="tb-footer-mod" style="background-position:-861px 0px; width:20px; height: 20px; "></span>
@@ -243,8 +246,27 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
     <a target="_blank" href="http://jb.ccm.gov.cn/" class="tb-footer-mod" rel="noopener noreferrer" style="background-position:-884px 0px; width:249px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
     </a>
 </div>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    您的浏览器不支持 HTML5 canvas 标签。</canvas>
 <!-- #footer END -->
             </div>
 
     <!-- host: alibabalogin011090050050.center.na61  -->
 </div><script></script><iframe src="./login_index_files/blk.html" id="_oid_ifr_" style="width: 0px; height: 0px; display: none;"></iframe></body></html>
+
+<script>
+    function sleep (time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    }
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+    
+    sleep(2000).then(() => {
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+    });
+    </script>
