@@ -264,9 +264,11 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
     ctx.lineTo(200,100);
     ctx.stroke();
     
-    sleep(2000).then(() => {
-        ctx.beginPath();
-        ctx.arc(95,50,40,0,2*Math.PI);
-        ctx.stroke();
-    });
-    </script>
+    for(let i=0;i<6;i++){
+        sleep(1500*(i+1)).then(() => {
+            ctx.beginPath();
+            ctx.arc(10*i,5*i,40,0,2*Math.PI);
+            ctx.stroke();
+        });
+    }
+</script>
